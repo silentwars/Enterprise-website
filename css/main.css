@@ -1,0 +1,357 @@
+ 
+*{        
+	margin:0;
+	padding:0;
+	font-size: 12px;
+}
+body{
+	background-color: #F5F5F5;
+}
+.top{
+	width:100%;
+	height: 27px;
+	background:url(images/top_bg.jpg) repeat-x;
+}
+.top_content{
+	width:1000px;
+	margin:0 auto;
+}
+.top_content li{
+	float: right;
+	width:70px;
+	line-height: 27px;
+	list-style-image:url(images/li_bg.gif);
+}
+.top_content li a:link,.top_content li a:visited{
+	text-decoration: none;
+	color:#8E8E8E;
+}
+.top_content li a:hover,.top_content li a:active{
+	color: #900;
+	text-decoration: none;
+} 
+.wrap{
+	width:1000px;
+	margin:0 auto; 
+}
+.logo{
+	height:80px;
+	background-color:#FFF;
+	/* 不加上会溢出，造成对nav的影响。 */
+	overflow: hidden;
+}
+.logo_left{
+	width:20%;
+	float: left;
+	margin-left:50px;
+}
+.logo_right{
+	width:30%;
+	height: 28px;
+	float: right;
+	margin-top: 30px;
+	color:#8E8E8E;
+
+}
+.logo_right img{
+	vertical-align:middle;
+	margin-right: 10px;
+}
+.logo_right .tel{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color:#C00;
+	text-align: center;
+} 
+/* top结束 */
+.nav{
+	height: 40px;
+
+}
+.nav_left{
+	width:1%;
+	background: url(images/nav_left.jpg) no-repeat;
+}
+.nav_mid{
+	width:98%;
+	background: url(images/nav_bg.jpg) repeat-x;
+}
+.nav_right{
+	width:1%;
+	background:url(images/nav_right.jpg) no-repeat;
+}
+.nav_left,.nav_mid,.nav_right{
+	height: 40px;
+	float: left;
+}
+.nav_mid_left,.nav_mid_right{
+	float: left;
+}
+.nav_mid_left{
+	width:68%;
+}
+.nav_mid_right{
+	width:30%;
+}
+.nav_mid_left li{
+	float: left;
+	list-style-type:none; 
+	width: 100px;
+	text-align: center;
+	/* 一种方法，可以实现盒子中的内容实现居中 */
+	line-height: 40px;
+}
+/* 1、link是指连接的初始状态 2、初始链接访问后的状态。*/
+.nav_mid_left a:link,.nav_mid_left a:visited{
+	text-decoration: none;
+	color:#FFF;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.nav_mid_left a:hover,.nav_mid_left a:active{
+	text-decoration: none;
+	color:#C90;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.search_text{
+	width:190px;
+	height: 25px;
+	margin-top:5px;
+	/* 这句话可以换成下面的三行代码。
+	background: url(images/search.jpg) no-repeat right center;
+	background-image: url(images/search.jpg);
+	background-repeat: none;
+	background-position: right center; */
+	background-color: #FFF;
+	padding-right:25px;
+	border:1px solid #FFF;
+	outline: none;
+	padding-top:2px;
+}
+.nav_mid_right input{
+	width:200px;
+	height: 24px;
+	/* 针对IE浏览器input框的兼容性。 */
+	line-height: 24px\9;
+	outline: none;
+	border:none;
+	padding:3px 10px;
+	font-family:Helvetica,Arial,'宋体',sans-serif;
+}
+.nav_mid_right .search_btn{
+	width: 50px;
+	height: 30px;
+	font-size: 14px;
+	border:none;
+	border-radius:2px;
+	cursor: pointer;
+} 
+.nav_mid_right i{
+	position:absolute;
+	top:121px;
+	right:250px;
+	z-index: 3;
+	color:#ccc;
+}
+
+/* nav结束 */
+.ad{
+	height:310px;
+	overflow: hidden;
+}
+/* ad结束 */
+
+
+.main{
+	width: 100%;
+	height: 300px;
+	margin-top:5px;
+	background-color: #FFF;
+}
+.news{
+	width:32%;
+	border:1px solid #E8E8E8;
+}
+.course{
+	width:32%;
+	border:1px solid #E8E8E8;
+}
+.sidebar{
+	width:33.4%;
+	border:1px solid #E8E8E8;
+}
+.clo{width: 1%;}
+
+.news,.course,.sidebar,.clo{
+	height: 300px;
+	float: left;
+}
+.title{
+	height: 35px;
+	border-bottom:2px solid #E8E8E8;
+}
+.title_left{
+	width:70%;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size:14px;
+	float: left;
+	line-height: 35px;
+	text-indent: 20px;
+	color:#786F66;
+}
+
+.title_right{
+	width:20%;
+	line-height: 35px;
+	float: right;
+	text-align: right;
+	padding-right: 15px;
+}
+.title_right a{
+	text-decoration: none;
+	color:#786F66;
+}
+/* 新闻中心news */
+.pic_news{
+	height:80px;
+	margin-top: 10px;
+	/* 设置整个.pic_news下的所有行高。*/
+	line-height: 22px;
+}
+.pic_news img{
+	/* 设置了img，直接设置p、h2更简洁。 */
+	float: left;
+	margin:0 10px 0 5px;
+}
+.course_pic{
+	text-align: center;
+}
+.course_pic img{
+	margin:0 -100%;
+}
+.course_content {
+	padding:0 10px;
+}
+.pic_news a,.course_content a{
+	color:#000;
+	text-decoration: none;
+}
+.course_content h2{padding-bottom: 5px;}
+.course_content p{
+	line-height: 20px;
+	text-indent: 2em;
+}
+.news_list{
+	height: 80px;
+	margin-top:20px;
+}
+.news_list li{
+	list-style: none;
+	background: url(images/list.jpg) no-repeat;
+	padding-left:10px;
+	margin:10px;
+	border-bottom:1px dotted #CCC; 
+}
+.news_list li a:link,.course_content a:link,.news_list li a:visited,.course_content a:visited{
+	text-decoration: none;
+	color:#000;
+}
+.news_list li a:hover,.course_content a:hover,.news_list li a:active,.course_content a:active{
+	text-decoration: none;
+	color:#F00;
+}
+.news_list li span{
+	float: right;
+	color:#999;
+}
+
+/* 课程中心course */
+.course_pic{
+	height: 120px;
+	margin-top:10px;
+	line-height: 22px;
+	width: 
+
+}
+
+.video{
+	height: 250px;
+}
+.video_content{
+	height: 250px;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.copyright{
+	width: 100%;
+	height: 200px;
+	background-color: #E8E8E8;
+	margin-top: 10px;
+}
+.copyright_content{
+	width:90%;
+	margin:0 auto;
+	padding:20px;
+}
+.copyright_content>ul>li{
+	width: 20%;	
+	float: left;
+	background: url(images/line.png) no-repeat right center;
+}
+.copyright_content li{
+	list-style-type: none;
+	text-align: center;
+	line-height: 30px;
+	font-family: "微软雅黑";
+}
+.copyright_content a{
+	text-decoration: none;
+	font-size: 18px;
+	color:#999;
+}
+.copyright_content li ul li a{
+	font-size: 14px;
+}
+.copyright_content a:hover{color:#2570BD;text-decoration: underline;}
+
+
+
+/* 自己写的,搜索框的样式的制作。
+.nav_mid_left{
+	height: 40px;
+	float: left;
+}
+.nav_mid_left ul{input_click
+	margin-left:35px;
+	list-style: none;
+
+}
+.nav_mid_left ul li{
+	line-height: 40px;
+	float: left;
+	margin:0 25px 0;
+
+}
+.nav_mid_left ul li a{
+	text-decoration: none;
+	color:#E8E8E8;
+	font-size: 14px;
+}
+.nav_mid_left ul li a:hover{
+	color:#C90;
+}
+.nav_mid_right{
+	display: inline-block;
+	margin:8px 0 0 20px;
+}
+.nav_mid_right input{
+	width:250px;
+	height: 24px;
+	outline: none;
+	border:none;
+}
+ */
+
